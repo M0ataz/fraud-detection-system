@@ -1,0 +1,15 @@
+{
+  "threshold": 0.9000000000000002,
+  "feature_names": [
+    "transaction_amount",
+    "merchant_risk_score",
+    "user_age",
+    "days_since_account_creation",
+    "transaction_hour",
+    "num_transactions_today",
+    "device_trust_score",
+    "failed_login_attempts",
+    "international_transaction",
+    "card_present"
+  ]
+}

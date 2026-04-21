@@ -1,0 +1,19 @@
+{
+  "total_samples": 100000,
+  "fraud_count": 1500,
+  "fraud_ratio": 0.015,
+  "features": [
+    "transaction_amount",
+    "merchant_risk_score",
+    "user_age",
+    "days_since_account_creation",
+    "transaction_hour",
+    "num_transactions_today",
+    "device_trust_score",
+    "failed_login_attempts",
+    "international_transaction",
+    "card_present"
+  ],
+  "train_samples": 80000,
+  "test_samples": 20000
+}

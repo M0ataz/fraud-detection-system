@@ -1,0 +1,33 @@
+{
+  "precision": 0.6926829268292682,
+  "recall": 0.9466666666666667,
+  "f1": 0.8,
+  "roc_auc": 0.9976406091370558,
+  "pr_auc": 0.9490325509106509,
+  "specificity": 0.9936040609137056,
+  "confusion_matrix": {
+    "tn": 19574,
+    "fp": 126,
+    "fn": 16,
+    "tp": 284
+  },
+  "business_impact": {
+    "actual_fraud_amount": 75000.0,
+    "loss_without_model": 71250.0,
+    "loss_with_model": 4430.0,
+    "savings": 66820.0,
+    "roi": 93.78245614035087
+  },
+  "threshold_comparison": {
+    "default": {
+      "precision": 0.5225225225225225,
+      "recall": 0.9666666666666667,
+      "f1": 0.6783625730994152
+    },
+    "tuned": {
+      "precision": 0.6926829268292682,
+      "recall": 0.9466666666666667,
+      "f1": 0.8
+    }
+  }
+}
