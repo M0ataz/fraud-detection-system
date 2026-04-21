@@ -1,5 +1,11 @@
 # Production Fraud Detection System
 
+![Machine Learning](https://img.shields.io/badge/topic-machine--learning-blue)
+![Fraud Detection](https://img.shields.io/badge/topic-fraud--detection-blue)
+![FastAPI](https://img.shields.io/badge/topic-fastapi-blue)
+![XGBoost](https://img.shields.io/badge/topic-xgboost-blue)
+![MLOps](https://img.shields.io/badge/topic-mlops-blue)
+
 A production-grade machine learning system for detecting fraudulent transactions, built with a focus on handling real-world constraints like extreme class imbalance, threshold tuning, and robust API design.
 
 ## 🎯 Project Overview

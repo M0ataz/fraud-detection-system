@@ -1,0 +1,32 @@
+version: "3.9"
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: runtime
+    image: fraud-detection-api:latest
+    container_name: fraud_detection_api
+    ports:
+      - "8000:8000"
+    volumes:
+      # Mount the models directory so updated model artefacts are picked up
+      # without rebuilding the image
+      - ./models:/app/models:ro
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+    restart: unless-stopped
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"
+        ]
+      interval: 30s
+      timeout: 10s
+      start_period: 15s
+      retries: 3
